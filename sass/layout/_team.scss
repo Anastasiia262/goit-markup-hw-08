@@ -1,0 +1,131 @@
+.team {
+  background-color: #f5f4fa;
+  padding-bottom: 94px;
+}
+
+.team__list {
+  gap: 30px;
+  @media screen and (max-width: 767px) {
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.team__foto__1 {
+  background-image: url(../img/team_img_1.jpg);
+  border-radius: 0px;
+  display: block;
+}
+
+.team__foto__2 {
+  background-image: url(../img/team_img_2.jpg);
+  border-radius: 0px;
+  display: block;
+}
+
+.team__foto__3 {
+  background-image: url(../img/team_img_3.jpg);
+  border-radius: 0px;
+  display: block;
+}
+
+.team__foto__4 {
+  background-image: url(../img/team_img_4.jpg);
+  border-radius: 0px;
+  display: block;
+}
+
+
+
+.box__1,
+.box__2,
+.box__3,
+.box__4 {
+  padding: 30px 0;
+  align-items: center;
+}
+
+.team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.team__text {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+  margin-bottom: 16px;
+}
+
+.team__box {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  @media screen and (max-width: 767px) {
+    height: 622px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 536px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 428px;
+  }
+}
+
+.team__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team__item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.team__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team__icon,
+.team__icon {
+  &:hover,
+  &:focus {
+    background-color: var(--brend-color);
+    color: #ffffff;
+  }
+}
+
+.team__icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+}
+
+.team__item__icon {
+  fill: currentColor;
+}

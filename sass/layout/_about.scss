@@ -1,0 +1,73 @@
+.about {
+  padding: 94px 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.about__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.about__item {
+  margin-left: 30px;
+}
+
+.img__wraper .about_text {
+  position: relative;
+}
+
+.about_text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  position: absolute;
+  color: #ffffff;
+  bottom: 40px;
+}
+
+.about__item__bg {
+  &::before {
+    display: block;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    content: " ";
+    width: 370px;
+    height: 70px;
+    margin-top: 224px;
+    background: #2f303a;
+    opacity: 80%;
+  }
+}
+
+.about__foto__1 {
+  background-image: url(../img/about_img1.svg);
+}
+
+.about__foto__2 {
+  background-image: url(../img/about_img2.svg);
+}
+
+.about__foto__3 {
+  background-image: url(../img/about_img3.svg);
+}
+
+.about__heading,
+.team__heading {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-bottom: 50px;
+}
+
+.about__foto__1,
+.about__foto__2,
+.about__foto__3 {
+  display: block;
+}

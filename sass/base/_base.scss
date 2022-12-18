@@ -1,0 +1,88 @@
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+}
+
+.conteiner {
+  margin: 0 auto;
+  padding: 0 15px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.main,
+.footer {
+  background-color: #2f303a;
+}
+
+.main,
+.section,
+.about,
+.team,
+.client {
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
+}
+
+.navigation__portfolio,
+.navigation__contact {
+  margin-left: 50px;
+}
+
+.navigation__link,
+.header__email__link,
+.header__telephone__link,
+.address__link,
+.address__list__email,
+.address__link__tel {
+  &:hover {
+    color: var(--brend-color);
+  }
+}
+
+.navigation__link,
+.header__email__link,
+.header__telephone__link,
+.address__link,
+.address__list__email,
+.address__link__tel {
+  &:focus {
+    color: var(--brend-color);
+  }
+}
+
+img {
+  max-width: 100%;
+}

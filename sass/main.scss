@@ -1,0 +1,24 @@
+//BASE
+@import "./base/variables";
+@import "./base/base";
+
+//UTILS
+@import "./utils/visualli-hidden";
+@import "./utils/breakpoints";
+
+//COMPONENTS
+@import "./components/button";
+@import "./components/modal";
+
+//LAYOUT
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/section";
+@import "./layout/about";
+@import "./layout/team";
+@import "./layout/regular-klient";
+@import "./layout/footer";
+@import "./layout/portfolio-button";
+@import "./layout/portfolio";
+@import "./layout/mobile-menu";
+
