@@ -1,5 +1,6 @@
 .menu {
   display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -86,49 +87,80 @@
   margin-bottom: 36px;
 }
 .mobile-menu__link {
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
-  letter-spacing: 0.02em;
-  color: var(--main-color);
+  @media screen and (max-width: 479px) {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+  }
+  @media screen and (min-width: 480px) {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+  }
 }
 
 .nav__mobile__menu {
   color: var(--brend-color);
 }
 
+.mobile-contacts__conteiner {
+  margin-top: auto;
+}
 .mobile-contacts {
   padding-left: 40px;
-  margin-top: 302px;
 }
 
 .mobile-contacts__item {
   margin-top: 32px;
 }
 
-.mobile-phone__link, .mobile-e-mail__link {
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-
 .mobile-phone__link {
-  font-size: 34px;
-line-height: calc(40/34);
-color: var(--brend-color);
+  @media screen and (max-width: 479px) {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    font-size: 18px;
+    line-height: calc(40 / 34);
+    color: var(--brend-color);
+  }
+  @media screen and (min-width: 480px) {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    font-size: 34px;
+    line-height: calc(40 / 34);
+    color: var(--brend-color);
+  }
 }
 
 .mobile-e-mail__link {
+  @media screen and (max-width: 479px) {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    font-size: 18px;
+    line-height: calc(40 / 34);
+    color: var(--color-text);
+  }
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   font-size: 24px;
-line-height: calc(28/24);
-color: var(--color-text);
+  line-height: calc(28 / 24);
+  color: var(--color-text);
 }
 
 .mobile-social {
   margin-top: 64px;
   padding-left: 40px;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -139,9 +171,11 @@ color: var(--color-text);
   letter-spacing: 0.02em;
   color: var(--brend-color);
   @media screen and (max-width: 479px) {
-    font-size: 13px;
+    font-size: 16px;
+    
   }
 }
+
 
 .inst,
 .twit,

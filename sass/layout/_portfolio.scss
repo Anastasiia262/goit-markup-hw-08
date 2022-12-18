@@ -1,18 +1,33 @@
 .portfolio__list {
-    display: flex;
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 60px;
+      display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    
     gap: 30px;   
-    @media screen and (max-width: 1199px) {
-      margin-bottom: 60px;
     }
     @media screen and (min-width: 1200px) {
         margin-bottom: 94px;
     }
 }
-
+.portfolio__item {
+    @media screen and (min-width: 480px) {
+        width: 450px;
+}
+@media screen and (min-width: 768px) {
+    width: 354px;
+}
+@media screen and (min-width: 1200px) {
+    width: 370px;
+}
+}
 .portfolio__item .img__wraper { 
     position: relative;
     overflow: hidden; 

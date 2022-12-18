@@ -1,8 +1,10 @@
 .about {
-  padding: 94px 0;
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 94px; 
+    }
 }
 
 .about__list {
@@ -56,8 +58,7 @@
   background-image: url(../img/about_img3.svg);
 }
 
-.about__heading,
-.team__heading {
+.about__heading {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;

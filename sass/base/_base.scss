@@ -12,10 +12,14 @@ body {
 }
 
 .conteiner {
+  width: 100vw;
   margin: 0 auto;
   padding: 0 15px;
   @media screen and (min-width: 480px) {
     width: 480px;
+  }
+  @media screen and (max-width: 767px) {
+    
   }
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -38,22 +42,6 @@ body {
 .main,
 .footer {
   background-color: #2f303a;
-}
-
-.main,
-.section,
-.about,
-.team,
-.client {
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-  }
-  @media screen and (min-width: 768px) {
-    padding-top: 60px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-  }
 }
 
 .navigation__portfolio,
@@ -84,5 +72,5 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
