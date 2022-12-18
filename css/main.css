@@ -289,9 +289,9 @@ img {
   margin-top: 20px;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .checkbox-conteiner {
-    margin-left: 12px;
+    margin-left: 10px;
   }
 }
 
@@ -349,11 +349,15 @@ img {
         flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .checkbox-contract {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
