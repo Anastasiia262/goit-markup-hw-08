@@ -123,6 +123,8 @@ img {
   .modal {
     width: 100vw;
     height: 609px;
+    max-height: 90vh;
+    overflow-y: scroll;
   }
 }
 @media screen and (min-width: 480px) {
@@ -598,7 +600,7 @@ img {
 @media screen and (min-width: 768px) {
   .header__email__link,
 .header__telephone__link {
-    padding-left: 81px;
+    padding-left: 62px;
     font-size: 12px;
     line-height: 1.1428571429;
   }
@@ -614,7 +616,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .header__telephone__link {
-    margin-left: 50px;
+    margin-left: 20px;
   }
 }
 
@@ -1080,7 +1082,7 @@ img {
 .box__2,
 .box__3,
 .box__4 {
-    padding: 5px 0;
+    padding-top: 60px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1157,7 +1159,7 @@ img {
 }
 @media screen and (max-width: 479px) {
   .team__box {
-    height: 428px;
+    height: 582px;
     margin-bottom: 30px;
   }
 }
@@ -2124,6 +2126,13 @@ img {
 }
 
 .menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -2196,10 +2205,6 @@ img {
   padding-left: 40px;
 }
 
-.mobile-contacts__item {
-  margin-top: 32px;
-}
-
 @media screen and (max-width: 479px) {
   .mobile-phone__link {
     font-family: Roboto, sans-serif;
@@ -2238,6 +2243,10 @@ img {
     line-height: 1.1764705882;
     color: var(--color-text);
   }
+}
+
+.mobile-contacts__item {
+  margin-top: 32px;
 }
 
 .mobile-social {

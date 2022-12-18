@@ -51,6 +51,8 @@
 }
 
 .menu-container {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -116,9 +118,6 @@
   padding-left: 40px;
 }
 
-.mobile-contacts__item {
-  margin-top: 32px;
-}
 
 .mobile-phone__link {
   @media screen and (max-width: 479px) {
@@ -155,7 +154,9 @@
   line-height: calc(28 / 24);
   color: var(--color-text);
 }
-
+.mobile-contacts__item {
+margin-top: 32px;
+}
 .mobile-social {
   margin-top: 64px;
   padding-left: 40px;
@@ -172,10 +173,8 @@
   color: var(--brend-color);
   @media screen and (max-width: 479px) {
     font-size: 16px;
-    
   }
 }
-
 
 .inst,
 .twit,
